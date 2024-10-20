@@ -2,6 +2,8 @@
 #include <iostream>
 using namespace std;
 
+int MyString::amount = 0;
+
 MyString::MyString()
 {
     length = 80;
@@ -125,6 +127,11 @@ int MyString::MyStrCmp(MyString& b)
     {
         return 0;
     }
+}
+
+void MyString::Amount()
+{
+    cout << "Result: " << amount << endl;
 }
 
 MyString::~MyString()

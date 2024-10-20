@@ -7,6 +7,7 @@ class MyString
 private:
     char* str;
     int length;
+    static int amount;
 public:
     MyString();
     MyString(const char* obj);
@@ -20,5 +21,6 @@ public:
     void MyStrCat(MyString& b);
     void MyDelChr(char c);
     int MyStrCmp(MyString& b);
+    static void Amount();
     ~MyString();
 };

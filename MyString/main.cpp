@@ -27,4 +27,5 @@ int main()
     obj3.Print();
 
     cout << obj3.MyStrStr("u") << endl;
+    MyString::Amount();
 }
