@@ -22,7 +22,8 @@ public:
     void MyDelChr(char c);
     int MyStrCmp(MyString& b);
     static void Amount();
-    char operator[](int index); char* GetStr();
+    char operator[](int index);
     void SetStr(const char* d);
+    char* GetStr();
     ~MyString();
 };
