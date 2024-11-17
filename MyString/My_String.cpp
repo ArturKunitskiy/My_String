@@ -147,3 +147,20 @@ char MyString::operator[](int index)
     }
     return -1;
 }
+
+void MyString::SetStr(const char* d)
+{
+    if (str != nullptr)
+    {
+        delete[] str;
+    }
+
+    length = strlen(d);
+    str = new char[length + 1];
+    strcpy_s(str, length + 1, d);
+}
+
+char* MyString::GetStr()
+{
+    return str;
+}
