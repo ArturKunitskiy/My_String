@@ -22,5 +22,6 @@ public:
     void MyDelChr(char c);
     int MyStrCmp(MyString& b);
     static void Amount();
+    char operator[](int index);
     ~MyString();
 };

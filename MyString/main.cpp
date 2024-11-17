@@ -28,4 +28,6 @@ int main()
 
     cout << obj3.MyStrStr("u") << endl;
     MyString::Amount();
+
+    cout << obj3[7] << endl;
 }
